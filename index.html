@@ -1,8 +1,28 @@
 <html lang="en">
 <head>
-	<title></title>
+	<title>Jukebox</title>
+	<link rel="stylesheet" type="text/css" href="styles/jukebox.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script src="scripts/jukebox.js"></script>
 </head>
 <body>
+	<div id="wrapper">
+		<!-- this audio tag allows me to assign event listeners to javascript audio methods -->
+		<audio id="id1" src="" type="audio/mpeg"></audio>
 
+		<div id="controls">
+			<button id="previous">previous</button>
+			<button id="play">play</button>
+			<button id="pause">pause</button>
+			<button id="stop">stop</button>
+			<button id="next">next</button>
+		</div>
+
+		<div class="output">
+			<h4 class="info" id="t-info">title</h4>
+			<h4 class="info" id="a-info">artist</h4>
+			<h4 class="info" id="u-info"></h4>
+		</div>
+	</div>
 </body>
 </html>
